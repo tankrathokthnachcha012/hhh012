@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - กาน</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Tahoma, sans-serif;
+            background: linear-gradient(135deg, #ffe0ed, #e5ddff);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: white;
+            width: 100%;
+            max-width: 420px;
+            padding: 35px 25px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px #bba6c555;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #fce4ec;
+            border: 5px solid #f4b6d0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            margin: 0 auto 20px;
+        }
+
+        h1 {
+            color: #bd6391;
+            margin-bottom: 5px;
+        }
+
+        .nickname {
+            color: #9475c8;
+            font-size: 18px;
+        }
+
+        .info {
+            background: #fff5fa;
+            border-radius: 15px;
+            padding: 18px;
+            margin-top: 25px;
+            text-align: left;
+            line-height: 2;
+        }
+
+        .info strong {
+            color: #bd6391;
+        }
+
+        .skill {
+            display: inline-block;
+            background: #eee6ff;
+            color: #7854b5;
+            padding: 10px 18px;
+            border-radius: 20px;
+            margin-top: 15px;
+        }
+
+        button {
+            margin-top: 25px;
+            border: none;
+            background: #d889b2;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #b96794;
+        }
+
+        footer {
+            color: #999;
+            font-size: 12px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <div class="avatar">🎨</div>
+
+        <h1>สวัสดี เราชื่อตูน</h1>
+        <div class="nickname">ชื่อเล่น : กาน 💗</div>
+
+        <div class="info">
+            <p><strong>ชื่อจริง :</strong> ตูน</p>
+            <p><strong>ชื่อเล่น :</strong> กาน</p>
+            <p><strong>ความสามารถพิเศษ :</strong></p>
+            <div class="skill">✏️ วาดรูปและสร้างสรรค์ผลงานศิลปะ</div>
+        </div>
+
+        <button onclick="showMessage()">
+            ทักทายฉัน 👋
+        </button>
+
+        <footer>
+            © 2026 My Personal Profile
+        </footer>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("สวัสดีค่ะ ยินดีที่ได้รู้จักนะ 🎨💖");
+        }
+    </script>
+
+</body>
+</html>
